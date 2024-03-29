@@ -2,13 +2,13 @@
 
 I’m a Japanese frontend developer.
 <br />
-I'm looking for a job in Canada.
+<strong>I'm looking for a job in Canada.</strong>
+<br />
+<strong>Please read [my resume](https://github.com/kupuma-ru21/resume)!!</strong>
 <br />
 So if you can introduce a job to me, please contact me🙏
 <br />
 I have an experience as a frontend developer for about four years.
-<br />
-Please read my [resume](https://github.com/kupuma-ru21/resume)!!
 
 ---
 
