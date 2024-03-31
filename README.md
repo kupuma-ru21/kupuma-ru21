@@ -6,7 +6,7 @@ I’m a Japanese frontend developer.
 <br />
 <strong>Please read [my resume](https://github.com/kupuma-ru21/resume)!!</strong>
 <br />
-So if you can introduce a job to me, please contact me🙏
+So if you're looking for a frontend developer, please contact me🙏
 <br />
 I have an experience as a frontend developer for about four years.
 
