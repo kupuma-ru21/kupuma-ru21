@@ -1,8 +1,8 @@
-### 👀 Don't miss my profile!! haha
+### 👀 Please don't miss my profile!! haha
 
 I’m a Japanese frontend developer.
 <br />
-<strong>I'm looking for a job in Canada.</strong>
+<strong>I'm open-to-work!!</strong>
 <br />
 <strong>Please read [my resume](https://github.com/kupuma-ru21/resume)!!</strong>
 <br />
