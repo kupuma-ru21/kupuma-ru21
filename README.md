@@ -1,14 +1,4 @@
-### 👀 Please don't miss my profile!! haha
-
-I’m a Japanese frontend developer.
-<br />
-<strong>I'm open-to-work!!</strong>
-<br />
-<strong>Please read [my resume](https://github.com/kupuma-ru21/resume/blob/main/README_CANADA.md)!!</strong>
-<br />
-So if you're looking for a frontend developer, please contact me🙏
-<br />
-I have an experience as a frontend developer for about four years.
+### [my resume](https://github.com/kupuma-ru21/resume/blob/main/README_JAPAN.md)
 
 ---
 
