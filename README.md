@@ -1,4 +1,4 @@
-### [my resume](https://github.com/kupuma-ru21/resume/blob/main/README_JAPAN.md)
+### [Resume](https://github.com/kupuma-ru21/resume/blob/main/README_JAPAN.md)
 
 ---
 
