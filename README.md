@@ -48,6 +48,9 @@
 
 ![](https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=GraphQL&logoColor=white)
 
+### Out put
+https://dev.to/kupumaru21
+
 <!--
 **kupuma-ru21/kupuma-ru21** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
