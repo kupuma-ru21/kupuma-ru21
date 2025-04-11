@@ -79,7 +79,8 @@
 \textbf{\large 名前: 木村 浩一（きむら こういち）} \textbar\
 \href{https://github.com/kupuma-ru21}{GitHub} \textbar\
 \href{https://kupuma-ru21.com/}{Portfolio} (\href{https://github.com/kupuma-ru21/portfolio}{Repository}) \textbar\
-\href{https://www.linkedin.com/in/koichi-kimura-06ba14259/}{LinkedIn}
+\href{https://github.com/kupuma-ru21/kupuma-ru21/blob/main/OSS.md}{OSS} \textbar\
+\href{https://github.com/kupuma-ru21/kupuma-ru21/blob/main/TECH_BLOG.md}{Tech Blog}
 
 \vspace{-1em}
 
@@ -88,15 +89,15 @@
 \noindent
 \textbf{株式会社Sorajima | フルスタックエンジニア | 2024\kern-0.1em年5\kern-0.1em月 - 現在 | 東京, 日本（リモート）}
 
-\vspace{0.3em}
+\vspace{0.15em}
 
 \textbf{\href{https://sorajimatoon.com/}{ソラジマTOON}} / ソラジマTOONの管理画面のフロント・バックエンド開発
 
 \begin{itemize}[leftmargin=1.5em]
 
-  \item Lighthouseのパフォーマンススコアを35\% → 75\%に改善\\[0.5\baselineskip]
-  \noindent
-  リクエスト数削減 | 画像読み込み最適化（<img>: fetchPriority, loading使用） | Promise.allで非同期処理の並列化 | レイアウトシフト解消 | ComponentをControlled=>Uncontrolledに変更、不要なレンダリングを削除
+  \item Lighthouseのパフォーマンススコアを35\% → 75\%に改善\\
+  リクエスト数削減 | 画像読み込み最適化（\texttt{<img>}: \texttt{fetchPriority}, \texttt{loading}使用） | \texttt{Promise.all}で非 同期処理の並列化 | レイアウトシフト解消 | Componentを\texttt{Controlled}⇒\texttt{Uncontrolled}に変更しレンダリングを削除
+
 
   \item 楽観的UIを使用しUXの改善
 
@@ -110,8 +111,38 @@
 
 \noindent
 \makebox[3em][l]{\textbf{技術:}}%
-\parbox[t]{\dimexpr\linewidth-3em\relax}{
+\parbox[t]{\dimexpr\linewidth-2em\relax}{
 React.js, Next.js, Remix, Chakra-UI, Storybook, GraphQL, GraphQL-Codegen, Apollo Client, URQL, React-Hook-Form, Zod, ESLint, Prettier, PNPM, Git, Slack, Jira, Figma, Golang, Ent, Gqlgen
 }
+
+\vspace{0.15em}
+\noindent\rule{\linewidth}{0.4pt}
+\vspace{0.15em}
+
+\noindent
+\textbf{Buysell Technologies | フルスタックエンジニア | 2023\kern-0.1em年2\kern-0.1em月 - 2023\kern-0.1em年12\kern-0.1em月 | 東京, 日本（リモート）}
+
+\vspace{0.15em}
+
+\textbf{買取店舗で使用する業務システムのフロント・バックエンド開発}
+
+\begin{itemize}[leftmargin=1.5em]
+
+  \item 日付ライブラリの再選定とリプレイス: day.jsの\href{https://github.com/iamkun/dayjs/issues/1236}{パフォーマンス問題}により、date-fnsへ移行\\
+  date-fnsの理由は\href{https://npmtrends.com/date-fns-vs-dayjs-vs-luxon}{install数}が多く情報が豊富、型安全なTypeScript製、\href{https://github.com/date-fns/date-fns/graphs/contributors}{メンテナンスが活発}な点
+
+  \item DX改善：\href{https://speakerdeck.com/sonatard/coheision-coupling?slide=29}{論理的凝集}が起きていたComponentを責務ごとに分離し、可読性と保守性を向上
+
+  \item APIの新規追加・ER図の更新:
+  未経験ながらバックエンドに挑戦。SQLBoilerを主に学習、APIとテストを期日内に実装。既存テーブルにカラム追加、ER図も更新
+
+\end{itemize}
+
+\noindent
+\makebox[3em][l]{\textbf{技術:}}%
+\parbox[t]{\dimexpr\linewidth-2em\relax}{
+React.js, Next.js, Storybook, GraphQL, GraphQL-Codegen, Apollo Client, Material-UI, React-Hook-Form, Zod, Vitest, ESLint, Prettier, PNPM, Git, Slack, Jira, Figma, Golang, SQLBoiler, Gqlgen
+}
+
 
 \end{document}
