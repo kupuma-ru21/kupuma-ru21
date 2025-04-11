@@ -3,7 +3,6 @@
 - [GitHub](https://github.com/kupuma-ru21)
 - [Portfolio](https://kupuma-ru21.com/)
   - [Repository](https://github.com/kupuma-ru21/portfolio)
-- [LinkedIn](https://www.linkedin.com/in/koichi-kimura-06ba14259/)
 
 ## 職務経歴
 
