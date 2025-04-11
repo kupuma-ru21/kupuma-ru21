@@ -1,6 +1,8 @@
 % !TEX program = xelatex
 \documentclass{article}
-\usepackage{hyperref}
+\usepackage[normalem]{ulem}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+\usepackage{xcolor}
 \usepackage{fontspec}
 \usepackage{xeCJK}
 \usepackage{enumitem}
@@ -14,9 +16,13 @@
 \setCJKmonofont{IPAGothic}
 \linespread{0.2}
 \xeCJKsetup{
-  CJKglue = {\hskip -0.05em}
+  CJKglue = {\kern -0.05em}
 }
 \setlist[itemize]{itemsep=0.3em, topsep=0.3em, parsep=0em}
+\newcommand{\jobentry}[2]{%
+  \hbox{\hskip -0.1em {\large \textbf{#1}} | #2}%
+}
+\newcommand{\link}[2]{\href{#1}{\uline{#2}}}
 
 \XeTeXinterchartokenstate=1
 \newXeTeXintercharclass\english
@@ -77,72 +83,154 @@
 
 \noindent
 \textbf{\large 名前: 木村 浩一（きむら こういち）} \textbar\
-\href{https://github.com/kupuma-ru21}{GitHub} \textbar\
-\href{https://kupuma-ru21.com/}{Portfolio} (\href{https://github.com/kupuma-ru21/portfolio}{Repository}) \textbar\
-\href{https://github.com/kupuma-ru21/kupuma-ru21/blob/main/OSS.md}{OSS} \textbar\
-\href{https://github.com/kupuma-ru21/kupuma-ru21/blob/main/TECH_BLOG.md}{Tech Blog}
+\link{https://github.com/kupuma-ru21}{GitHub} \textbar\
+\link{https://kupuma-ru21.com/}{Portfolio} \link{https://github.com/kupuma-ru21/portfolio}{(Repository)} \textbar\
+\link{https://github.com/kupuma-ru21/kupuma-ru21/blob/main/OSS.md}{OSS} \textbar\
+\link{https://zenn.dev/kupuma_ru21}{Tech Blog}
 
-\vspace{-1em}
+\vspace{-1.25em}
 
 \section*{職務経歴}
 
-\noindent
-\textbf{株式会社Sorajima | フルスタックエンジニア | 2024\kern-0.1em年5\kern-0.1em月 - 現在 | 東京, 日本（リモート）}
+\vspace{-0.6em}
+
+\jobentry{\link{https://sorajima.jp}{株式会社ソラジマ} | フルスタックエンジニア}{2024\kern-0.1em年5\kern-0.1em月 - 現在 | 東京, 日本（リモート）}
 
 \vspace{0.15em}
 
-\textbf{\href{https://sorajimatoon.com/}{ソラジマTOON}} / ソラジマTOONの管理画面のフロント・バックエンド開発
+\noindent 業務: {\link{https://sorajimatoon.com}{ソラジマTOON}} / ソラジマTOONの管理画面のフロント・バックエンド開発
 
-\begin{itemize}[leftmargin=1.5em]
+\begin{itemize}[leftmargin=1em]
 
   \item Lighthouseのパフォーマンススコアを35\% → 75\%に改善\\
-  リクエスト数削減 | 画像読み込み最適化（\texttt{<img>}: \texttt{fetchPriority}, \texttt{loading}使用） | \texttt{Promise.all}で非 同期処理の並列化 | レイアウトシフト解消 | Componentを\texttt{Controlled}⇒\texttt{Uncontrolled}に変更しレンダリングを削除
+  リクエスト数削減 | 画像読み込み最適化（\texttt{<img>}: \texttt{fetchPriority}, \texttt{loading}使用） | \texttt{Promise.all}で非 同期処理の並列化 | レイアウトシフト解消 | ComponentをControlled⇒Uncontrolledに変更しレンダリング回数を削除
 
 
   \item 楽観的UIを使用しUXの改善
 
-  \item DX改善：Componentを\href{https://kentcdodds.com/blog/compound-components-with-react-hooks}{CompoundComponent}で再設計し、柔軟にUIを表現できるよう変更
+  \item Componentを\link{https://kentcdodds.com/blog/compound-components-with-react-hooks}{CompoundComponent}で再設計し、柔軟にUIを表現できるよう変更
 
   \item APIの追加、改修、バグ修正を行い、バックエンドエンジニアとの会話コスト削減に貢献
 
-  \item プロジェクト新規立ち上げを担当: 未経験だったが興味があり、個人でReact・Go・GCPで\href{https://github.com/kupuma-ru21/portfolio}{Webアプリ}を開発、その後本番プロジェクトを円滑に進行
+  \item プロジェクト新規立ち上げに挑戦\\
+  インフラ知識が浅く、予習として\link{https://github.com/kupuma-ru21/portfolio}{Webアプリ}を個人開発、業務での立ち上げ成功に繋がった
 
 \end{itemize}
 
 \noindent
-\makebox[3em][l]{\textbf{技術:}}%
-\parbox[t]{\dimexpr\linewidth-2em\relax}{
-React.js, Next.js, Remix, Chakra-UI, Storybook, GraphQL, GraphQL-Codegen, Apollo Client, URQL, React-Hook-Form, Zod, ESLint, Prettier, PNPM, Git, Slack, Jira, Figma, Golang, Ent, Gqlgen
+\begin{tabular}{@{}l l}
+\textbf{技術:} & \parbox[t]{\dimexpr\linewidth-6em\relax}{
+  React.js, Next.js, Remix, Chakra-UI, Storybook, GraphQL-Codegen, Apollo Client, URQL, React-Hook-Form, Zod, ESLint, Prettier, PNPM, Git, Slack, Figma, Go, Ent, Gqlgen
 }
+\end{tabular}
 
 \vspace{0.15em}
 \noindent\rule{\linewidth}{0.4pt}
 \vspace{0.15em}
 
-\noindent
-\textbf{Buysell Technologies | フルスタックエンジニア | 2023\kern-0.1em年2\kern-0.1em月 - 2023\kern-0.1em年12\kern-0.1em月 | 東京, 日本（リモート）}
+\jobentry{\link{https://buysell-technologies.com}{株式会社BuySell Technologies} | フルスタックエンジニア}{2023\kern-0.1em年2\kern-0.1em月 - 12\kern-0.1em月 | 東京, 日本（リモート）}
 
 \vspace{0.15em}
 
-\textbf{買取店舗で使用する業務システムのフロント・バックエンド開発}
+\noindent 業務: 買取店舗で使用する業務システムのフロント・バックエンド開発
 
-\begin{itemize}[leftmargin=1.5em]
+\begin{itemize}[leftmargin=1em]
 
-  \item 日付ライブラリの再選定とリプレイス: day.jsの\href{https://github.com/iamkun/dayjs/issues/1236}{パフォーマンス問題}により、date-fnsへ移行\\
-  date-fnsの理由は\href{https://npmtrends.com/date-fns-vs-dayjs-vs-luxon}{install数}が多く情報が豊富、型安全なTypeScript製、\href{https://github.com/date-fns/date-fns/graphs/contributors}{メンテナンスが活発}な点
+  \item day.jsの\link{https://github.com/iamkun/dayjs/issues/1236}{パフォーマンス問題}により、日付ライブラリを再選定、date-fnsへ移行\\
+  date-fnsの理由は\link{https://npmtrends.com/date-fns-vs-dayjs-vs-js-joda-vs-luxon}{install数}が多く情報が豊富、型安全なTypeScript製、\link{https://github.com/date-fns/date-fns/graphs/contributors}{メンテナンスが活発}な点
 
-  \item DX改善：\href{https://speakerdeck.com/sonatard/coheision-coupling?slide=29}{論理的凝集}が起きていたComponentを責務ごとに分離し、可読性と保守性を向上
+  \item \link{https://speakerdeck.com/sonatard/coheision-coupling?slide=29}{論理的凝集}が起きていたComponentを責務ごとに分離し、可読性と保守性を向上
 
-  \item APIの新規追加・ER図の更新:
-  未経験ながらバックエンドに挑戦。SQLBoilerを主に学習、APIとテストを期日内に実装。既存テーブルにカラム追加、ER図も更新
+  \item バックエンドに挑戦。SQLBoilerを主に学習、APIとテストを期日内に実装。既存テーブルにカラム追加、ER図更新
 
 \end{itemize}
 
 \noindent
-\makebox[3em][l]{\textbf{技術:}}%
-\parbox[t]{\dimexpr\linewidth-2em\relax}{
-React.js, Next.js, Storybook, GraphQL, GraphQL-Codegen, Apollo Client, Material-UI, React-Hook-Form, Zod, Vitest, ESLint, Prettier, PNPM, Git, Slack, Jira, Figma, Golang, SQLBoiler, Gqlgen
+\begin{tabular}{@{}l l}
+\textbf{技術:} & \parbox[t]{\dimexpr\linewidth-6em\relax}{
+  React.js, Next.js, Storybook, GraphQL-Codegen, Apollo Client, Material-UI, React-Hook-Form, Zod, Vitest, ESLint, Prettier, PNPM, Git, Slack, Jira, Figma, Go, SQLBoiler, Gqlgen
 }
+\end{tabular}
 
+\vspace{0.15em}
+\noindent\rule{\linewidth}{0.4pt}
+\vspace{0.15em}
+
+\jobentry{\link{https://visits.world}{VISITS Technologies株式会社} \textbar\ フロントエンドエンジニア}{2021\kern-0.1em年5\kern-0.1em月 - 2023\kern-0.1em年2\kern-0.1em月 \textbar\ 東京, 日本（リモート）}
+
+\vspace{0.15em}
+
+\noindent 業務: {\link{https://visitsforms.com}{Visits Forms}}のフロントエンド開発
+
+\begin{itemize}[leftmargin=1em]
+
+\item Prettier導入でコードを自動整形、レビュー負荷を軽減。「開発しやすくなった」との声も頂いた
+
+\item Jest・React Testing Libraryを使い単体／コンポーネントテストで品質を向上\\
+Sentryで発見された不具合に都度テストコードを追加し、再発防止体制を整備
+
+\item 開発の生産性に課題を感じ、フィードバックを求め「事前の認識合わせの不足」とご指摘を頂いた\\
+以降、実装前にPM・デザイナーと仕様やUIについて確認するよう習慣づけ、開発の停滞を防止
+
+\end{itemize}
+
+\noindent
+\begin{tabular}{@{}l l}
+\textbf{技術:} & \parbox[t]{\dimexpr\linewidth-6em\relax}{
+  React.js, React-Router, React-Datepicker, React-DND, React-i18next, React-Hook-Form\\
+  React-Testing-Library, Yup, GraphQL-Codegen, Apollo Client, Styled-Components, Jest, ECharts, ESLint, Prettier, Yarn, Git, Slack, Jira, Figma
+}
+\end{tabular}
+
+\vspace{0.15em}
+\noindent\rule{\linewidth}{0.4pt}
+\vspace{0.15em}
+
+\jobentry{\link{https://gizumo-inc.jp}{株式会社Gizumo} \textbar\ フロントエンドエンジニア}{2019\kern-0.1em年9\kern-0.1em月 - 2021\kern-0.1em年5\kern-0.1em月 \textbar\ 東京, 日本}
+
+\vspace{0.15em}
+
+\noindent 業務: {\link{https://moneykit.net/}{インターネットバンキング}}のフロントエンド開発
+
+\begin{itemize}[leftmargin=1em]
+
+  \item Hooksを用いたロジックの共通化によるメンテナンス性・再利用性の向上
+
+\end{itemize}
+
+\noindent
+\begin{tabular}{@{}l l}
+\textbf{技術:} & \parbox[t]{\dimexpr\linewidth-6em\relax}{
+  React.js, Redux, React-Redux, MUI, Next.js, Formik, Yup, Axios, Jest, ESLint, Yarn, Git, GitLab, Slack, Adobe XD, GitHub
+}
+\end{tabular}
+
+\vspace{0.5em}
+
+\noindent 業務: 倉庫管理システムのフロントエンド開発
+
+\begin{itemize}[leftmargin=1em]
+
+  \item Gitの習熟度が低く生産性に課題を感じていたため、Gitの学習を実施\\
+  最新でないデフォルトブランチから作業ブランチを切ることでコンフリクトを起こすことがあったため、\\
+  \texttt{checkout default-branch}→\texttt{pull}→\texttt{checkout -b new-branch}を1つのGitAliasにまとめて再発防止
+
+\end{itemize}
+
+\noindent
+\begin{tabular}{@{}l l}
+\textbf{技術:} & \parbox[t]{\dimexpr\linewidth-6em\relax}{
+  Vue.js, Vue-Router, Vuex, Vuetify, Axios, Joi, Lodash, VeeValidate, Backlog, GitHub, Slack
+}
+\end{tabular}
+
+\vspace{0.25em}
+\noindent\rule{\linewidth}{0.4pt}
+\vspace{0.25em}
+
+\noindent
+\textbf{\large 英語} \textbar\
+\textbf{日常会話レベル} \textbar\
+\textbf{TOEIC: 695点(2023年度)}
 
 \end{document}

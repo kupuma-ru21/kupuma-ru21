@@ -49,7 +49,7 @@
 
 ##### 使用技術
 
-React.js, Next.js, Remix, Chakra-UI, Storybook, GraphQL, GraphQL-Codegen, Apollo Client, URQL, React-Hook-Form, Zod, ESLint, Prettier, PNPM, Git, Slack, Jira, Figma, Golang, Ent, Gqlgen
+React.js, Next.js, Remix, Chakra-UI, Storybook, GraphQL-Codegen, Apollo Client, URQL, React-Hook-Form, Zod, ESLint, Prettier, PNPM, Git, Slack, Figma, Go, Ent, Gqlgen
 
 ---
 
@@ -83,7 +83,7 @@ React.js, Next.js, Remix, Chakra-UI, Storybook, GraphQL, GraphQL-Codegen, Apollo
 
 ##### 使用技術
 
-React.js, Next.js, Storybook, GraphQL, GraphQL-Codegen, Apollo/Client, Material-UI, React-Hook-Form, Zod, Vitest, ESLint, Prettier, PNPM, Git, Slack, Jira, Figma, Golang, SQLBoiler, Gqlgen
+React.js, Next.js, Storybook, GraphQL-Codegen, Apollo Client, Material-UI, React-Hook-Form, Zod, Vitest, ESLint, Prettier, PNPM, Git, Slack, Jira, Figma, Go, SQLBoiler, Gqlgen
 
 ---
 
@@ -124,7 +124,7 @@ React.js, Next.js, Storybook, GraphQL, GraphQL-Codegen, Apollo/Client, Material-
 
 ##### 使用技術
 
-React.js, React-Router, React-Datepicker, React-DND, React-i18next, React-Testing-Library, GraphQL, GraphQL-Codegen, Apollo/Client, Styled-Components, React-Hook-Form, Yup, React-i18next, Jest, ECharts, Koa, ESLint, Prettier, Yarn, Git, Slack, Jira, Figma
+React.js, React-Router, React-Datepicker, React-DND, React-i18next, React-Hook-Form, React-Testing-Library, Yup, GraphQL-Codegen, Apollo Client, Styled-Components, Jest, ECharts, ESLint, Prettier, Yarn, Git, Slack, Jira, Figma
 
 ---
 
@@ -145,7 +145,7 @@ React.js, React-Router, React-Datepicker, React-DND, React-i18next, React-Testin
 
 ##### 使用技術
 
-React.js, Redux, React-Redux, Reselect, Styled-Components, Next.js, Formik, Yup, React- i18next, @Adobe/Target-React-Component, Axios, Immer, Ramda, Redux-Logger, Redux-Saga, Typesafe-Actions, Dotenv-Webpack, Prism, Jest, ESLint, Yarn, Git, GitLab, AWS CodeCommit, Sourcetree, Slack, Adobe XD, GitHub
+React.js, Redux, React-Redux, MUI, Next.js, Formik, Yup, Axios, Jest, ESLint, Yarn, Git, GitLab, Slack, Adobe XD, GitHub
 
 ##### 倉庫管理システムのフロントエンド開発
 
@@ -161,7 +161,7 @@ React.js, Redux, React-Redux, Reselect, Styled-Components, Next.js, Formik, Yup,
 
 
 ##### 使用技術
-Vue.js, Vue-Router, Vuex, Vuetify, Axios, Joi, Lodash, VeeValidate, Backlog, GitHub
+Vue.js, Vue-Router, Vuex, Vuetify, Axios, Joi, Lodash, VeeValidate, Backlog, GitHub, Slack
 
 ## 学歴
 
