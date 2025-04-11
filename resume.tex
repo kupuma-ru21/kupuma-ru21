@@ -1,0 +1,117 @@
+% !TEX program = xelatex
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{enumitem}
+\usepackage[margin=1in]{geometry}
+\setCJKmainfont[
+  BoldFont = IPAGothic
+]{IPAexGothic}
+\setmainfont[
+  BoldFont = IPAexGothic
+]{IPAexGothic}
+\setCJKmonofont{IPAGothic}
+\linespread{0.2}
+\xeCJKsetup{
+  CJKglue = {\hskip -0.05em}
+}
+\setlist[itemize]{itemsep=0.3em, topsep=0.3em, parsep=0em}
+
+\XeTeXinterchartokenstate=1
+\newXeTeXintercharclass\english
+\XeTeXcharclass`A=\english
+\XeTeXcharclass`B=\english
+\XeTeXcharclass`C=\english
+\XeTeXcharclass`D=\english
+\XeTeXcharclass`E=\english
+\XeTeXcharclass`F=\english
+\XeTeXcharclass`G=\english
+\XeTeXcharclass`H=\english
+\XeTeXcharclass`I=\english
+\XeTeXcharclass`J=\english
+\XeTeXcharclass`K=\english
+\XeTeXcharclass`L=\english
+\XeTeXcharclass`M=\english
+\XeTeXcharclass`N=\english
+\XeTeXcharclass`O=\english
+\XeTeXcharclass`P=\english
+\XeTeXcharclass`Q=\english
+\XeTeXcharclass`R=\english
+\XeTeXcharclass`S=\english
+\XeTeXcharclass`T=\english
+\XeTeXcharclass`U=\english
+\XeTeXcharclass`V=\english
+\XeTeXcharclass`W=\english
+\XeTeXcharclass`X=\english
+\XeTeXcharclass`Y=\english
+\XeTeXcharclass`Z=\english
+\XeTeXcharclass`a=\english
+\XeTeXcharclass`b=\english
+\XeTeXcharclass`c=\english
+\XeTeXcharclass`d=\english
+\XeTeXcharclass`e=\english
+\XeTeXcharclass`f=\english
+\XeTeXcharclass`g=\english
+\XeTeXcharclass`h=\english
+\XeTeXcharclass`i=\english
+\XeTeXcharclass`j=\english
+\XeTeXcharclass`k=\english
+\XeTeXcharclass`l=\english
+\XeTeXcharclass`m=\english
+\XeTeXcharclass`n=\english
+\XeTeXcharclass`o=\english
+\XeTeXcharclass`p=\english
+\XeTeXcharclass`q=\english
+\XeTeXcharclass`r=\english
+\XeTeXcharclass`s=\english
+\XeTeXcharclass`t=\english
+\XeTeXcharclass`u=\english
+\XeTeXcharclass`v=\english
+\XeTeXcharclass`w=\english
+\XeTeXcharclass`x=\english
+\XeTeXcharclass`y=\english
+\XeTeXcharclass`z=\english
+
+\begin{document}
+
+\noindent
+\textbf{\large 名前: 木村 浩一（きむら こういち）} \textbar\
+\href{https://github.com/kupuma-ru21}{GitHub} \textbar\
+\href{https://kupuma-ru21.com/}{Portfolio} (\href{https://github.com/kupuma-ru21/portfolio}{Repository}) \textbar\
+\href{https://www.linkedin.com/in/koichi-kimura-06ba14259/}{LinkedIn}
+
+\vspace{-1em}
+
+\section*{職務経歴}
+
+\noindent
+\textbf{株式会社Sorajima | フルスタックエンジニア | 2024\kern-0.1em年5\kern-0.1em月 - 現在 | 東京, 日本（リモート）}
+
+\vspace{0.3em}
+
+\textbf{\href{https://sorajimatoon.com/}{ソラジマTOON}} / ソラジマTOONの管理画面のフロント・バックエンド開発
+
+\begin{itemize}[leftmargin=1.5em]
+
+  \item Lighthouseのパフォーマンススコアを35\% → 75\%に改善\\[0.5\baselineskip]
+  \noindent
+  リクエスト数削減 | 画像読み込み最適化（<img>: fetchPriority, loading使用） | Promise.allで非同期処理の並列化 | レイアウトシフト解消 | ComponentをControlled=>Uncontrolledに変更、不要なレンダリングを削除
+
+  \item 楽観的UIを使用しUXの改善
+
+  \item DX改善：Componentを\href{https://kentcdodds.com/blog/compound-components-with-react-hooks}{CompoundComponent}で再設計し、柔軟にUIを表現できるよう変更
+
+  \item APIの追加、改修、バグ修正を行い、バックエンドエンジニアとの会話コスト削減に貢献
+
+  \item プロジェクト新規立ち上げを担当: 未経験だったが興味があり、個人でReact・Go・GCPで\href{https://github.com/kupuma-ru21/portfolio}{Webアプリ}を開発、その後本番プロジェクトを円滑に進行
+
+\end{itemize}
+
+\noindent
+\makebox[3em][l]{\textbf{技術:}}%
+\parbox[t]{\dimexpr\linewidth-3em\relax}{
+React.js, Next.js, Remix, Chakra-UI, Storybook, GraphQL, GraphQL-Codegen, Apollo Client, URQL, React-Hook-Form, Zod, ESLint, Prettier, PNPM, Git, Slack, Jira, Figma, Golang, Ent, Gqlgen
+}
+
+\end{document}

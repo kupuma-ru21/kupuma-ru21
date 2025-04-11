@@ -1,9 +1,7 @@
 # Hi, I'm Koichi 👋
 
-### [Resume](https://github.com/kupuma-ru21/resume/blob/main/README_CANADA.md)
-### This is my portfolio
-- https://kupuma-ru21.com
-- https://github.com/kupuma-ru21/portfolio
+### [Resume]
+### [Portfolio](https://kupuma-ru21.com) ([Repository](https://github.com/kupuma-ru21/portfolio))
 
 ---
 
