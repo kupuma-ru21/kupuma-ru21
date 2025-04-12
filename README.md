@@ -1,7 +1,7 @@
 # Hi, I'm Koichi 👋
 
 ### Resume
-- [Japanese](https://github.com/kupuma-ru21/kupuma-ru21/blob/main/resume.pdf)
+- [Japanese](https://github.com/kupuma-ru21/kupuma-ru21/blob/main/resume_japanese.pdf)
   - [Detail](https://github.com/kupuma-ru21/kupuma-ru21/blob/main/RESUME_DRAFT.md)
 
 - [English](https://github.com/kupuma-ru21/kupuma-ru21/blob/main/resume_english.pdf)
