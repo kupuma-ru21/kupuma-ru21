@@ -1,180 +1,106 @@
-% !TEX program = xelatex
 \documentclass{article}
-\usepackage[normalem]{ulem}
-\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
-\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[margin=0.5in]{geometry}
 \usepackage{fontspec}
-\usepackage{xeCJK}
-\usepackage{enumitem}
-\usepackage[margin=1in]{geometry}
-\setCJKmainfont[
-  BoldFont = IPAGothic
-]{IPAexGothic}
-\setmainfont[
-  BoldFont = IPAexGothic
-]{IPAexGothic}
-\setCJKmonofont{IPAGothic}
-\linespread{0.2}
-\setlist[itemize]{itemsep=0.3em, topsep=0.3em, parsep=0em}
-\fontdimen2\font=2.5pt
-\fontdimen3\font=0pt
-\fontdimen4\font=0pt
+
+\usepackage{hyperref}
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+\setmainfont{Arial}[LetterSpace=-2.0, Scale=0.95]
+\newcommand{\link}[2]{\href{#1}{\textcolor{blue}{\uline{#2}}}}
+
 \newcommand{\jobentry}[2]{%
   \hbox{\hskip -0.1em {\large \textbf{#1}} | #2}%
 }
-\newcommand{\link}[2]{\href{#1}{\uline{#2}}}
+
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=-0.5em, topsep=-0.5em}
 
 \begin{document}
+\begin{center}
+    {\LARGE \textbf{Koichi Kimura} \textbar\ \LARGE Full-Stack Developer}
+\end{center}
+\begin{center}
+    Vancouver, BC \textbar\ 236-308-2236 \textbar\ tech.kupumaru@gmail.com \textbar\
+    \link{https://github.com/kupuma-ru21}{github.com/kupuma-ru21} \textbar\
+    \link{https://www.linkedin.com/in/kupuma-ru21}{linkedin.com/in/kupuma-ru21}
+\end{center}
+
+\noindent {\normalsize\textbf{\uppercase{About}}}\par
+\vspace{-1em}
+\noindent\rule{\textwidth}{0.1pt}
+\noindent
+Highly skilled professional with over 5 years of experience in software development, specializing in Typescript, React, and Next.js. Adept at creating robust, scalable web applications, with a proven ability to deliver high-quality, user-centric solutions. Strong interest in maintainability of source codes and design patterns.
+
+\vspace{1em}
+
+\noindent {\normalsize\textbf{\uppercase{Technical Skills}}}\par
+\vspace{-1em}
+\noindent\rule{\textwidth}{0.1pt}
 
 \noindent
-\textbf{\large Name: Koichi Kimura} \textbar\
-\link{https://github.com/kupuma-ru21}{GitHub} \textbar\
-\link{https://kupuma-ru21.com/}{Portfolio} \link{https://github.com/kupuma-ru21/portfolio}{(Repository)} \textbar\
-\link{https://github.com/kupuma-ru21/kupuma-ru21/blob/main/OSS.md}{OSS} \textbar\
-\link{https://zenn.dev/kupuma_ru21}{Tech Blog}
+\textbf{Languages:} Typescript, Go \textbar\
+\textbf{Frameworks:} React, Node \textbar\
+\textbf{Developer Tools:} Git, Docker, Google Cloud, Figma, Slack, Jira, Sentry
+\noindent
+\textbf{Libraries:} Next.js, React-Router, Chakra-UI, Material-UI, Storybook, Jest, Vitest, Redux, Graphql, Postgres, MySQL
 
-\vspace{-1.25em}
+\vspace{1em}
 
-\section*{Work Experience}
+\noindent {\normalsize\textbf{\uppercase{Work Experience}}}\par
+\vspace{-1em}
+\noindent\rule{\textwidth}{0.1pt}
+\vspace{0.3em}
 
-\vspace{-0.6em}
-
-\jobentry{\link{https://sorajima.jp/en}{SORAJIMA  Inc.} | Fullstack Engineer}{May 2024 - Present | Tokyo, Japan (Remote)}
-
-\vspace{0.15em}
-
-\noindent Role: {\link{https://sorajimatoon.com}{SORAJIMA TOON}} / Frontend and backend development of the Sorajima TOON admin dashboard
-
-\begin{itemize}[leftmargin=1em]
-
-  \item Improved Lighthouse performance score from 35\% → 75\%\\
-  Reduced request count | Optimized image loading with \link{https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/fetchPriority}{fetchPriority}, \link{https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/loading}{loading} | Parallelized async processes with \texttt{Promise.all} | Fixed layout shifts | Reduced renders by switching to Uncontrolled components
-
-  \item Improved UX with optimistic UI
-
-  \item Redesigned components using the \link{https://kentcdodds.com/blog/compound-components-with-react-hooks}{Compound Component} pattern for flexible UI expression
-
-  \item Added, updated, and fixed APIs
-
-  \item Took on the challenge of launching a new project\\
-  Built a personal \link{https://github.com/kupuma-ru21/portfolio}{personal web app} to prepare for and succeed in a project launch
-
+\jobentry{\link{https://sorajima.jp/en}{SORAJIMA  Inc.} | Fullstack Developer}{May 2024 - Present | Tokyo, Japan (Remote)}
+\begin{itemize}
+  \item Improved Lighthouse performance score from 35\% to 75\% and enhanced UX with optimistic UI across multiple projects
+  \item Enabled flexible UI composition by redesigning components using \link{https://kentcdodds.com/blog/compound-components-with-react-hooks}{the Compound Component pattern}
+  \item Supported backend developers by adding, updating, and fixing APIs
+  \item Identified and fixed a critical bug preventing users from login that had stumped the team
+  \item Logged network requests over 1 second latency in Sentry, which led to significant performance improvements
+  \item Regularly updated libraries to the latest versions to avoid potential vulnerabilities
+  \item Reduced bundle size and improved security by replacing Client Components with Server Components
+  \item Bootstrapped a new frontend project by setting up CI, linters, and code generation tools
 \end{itemize}
 
-\noindent
-\begin{tabular}{@{}l l}
-\textbf{Tech:} & \parbox[t]{\dimexpr\linewidth-6em\relax}{
-  React.js, Next.js, Remix, Chakra-UI, Storybook, GraphQL-Codegen, Apollo Client, URQL, React-Hook-Form, Zod, ESLint, Prettier, PNPM, Git, Slack, Figma, Go, Ent, Gqlgen
-}
-\end{tabular}
+\vspace{1em}
 
-\vspace{0.15em}
-\noindent\rule{\linewidth}{0.4pt}
-\vspace{0.15em}
-
-\jobentry{\link{https://buysell-technologies.com/en/}{BuySell Technologies Co., Ltd.} | Fullstack Engineer}{Feb 2023 - Dec 2023 | Tokyo, Japan (Remote)}
-
-\vspace{0.15em}
-
-\noindent Role: Frontend and backend development of business systems used at buying stores
-
-\begin{itemize}[leftmargin=1em]
-
-  \item Replaced day.js due to a \link{https://github.com/iamkun/dayjs/issues/1236}{performance issue} with date-fns\\
-  Chose date-fns for its high \link{https://npmtrends.com/date-fns-vs-dayjs-vs-js-joda-vs-luxon}{install count}, strong TypeScript support, and active \link{https://github.com/date-fns/date-fns/graphs/contributors}{maintenance}
-
-  \item Split a component with \link{https://blog.devgenius.io/logical-cohesion-types-of-cohesion-7d84c7ff1625}{logical cohesion} to improve readability and maintainability
-
-  \item Took on backend tasks: learned SQLBoiler, implemented API and tests on time, added columns to existing tables, and updated ER diagrams
-
+\jobentry{\link{https://buysell-technologies.com/en/}{BuySell Technologies Co., Ltd.} | Fullstack Developer}{Feb 2023 - Dec 2023 | Tokyo, Japan (Remote)}
+\begin{itemize}
+  \item Reevaluated date libraries choice and migrated from Day.js to date-fns due to \link{https://github.com/iamkun/dayjs/issues/1236}{an issue} with Day.js
+  \item Improved component readability and maintainability by splitting a component with logical cohesion
+  \item Mentored junior developers through daily guidance, training, code reviews, and performance feedback
+  \item Reduced communication overhead with backend developers by implementing APIs and tests on time
 \end{itemize}
 
-\noindent
-\begin{tabular}{@{}l l}
-\textbf{Tech:} & \parbox[t]{\dimexpr\linewidth-6em\relax}{
-  React.js, Next.js, Storybook, GraphQL-Codegen, Apollo Client, Material-UI, React-Hook-Form, Zod, Vitest, ESLint, Prettier, PNPM, Git, Slack, Jira, Figma, Go, SQLBoiler, Gqlgen
-}
-\end{tabular}
 
-\vspace{0.15em}
-\noindent\rule{\linewidth}{0.4pt}
-\vspace{0.15em}
+\vspace{1em}
 
-\jobentry{\link{https://visits.world/en}{VISITS Technologies Inc.} \textbar\ Frontend Engineer}{May 2021 - Feb 2023 \textbar\ Tokyo, Japan (Remote)}
-
-\vspace{0.15em}
-
-\noindent Role: Frontend development of {\link{https://visitsforms.com}{Visits Forms}}
-
-\begin{itemize}[leftmargin=1em]
-
-\item Introduced Prettier for automatic code formatting, reducing review overhead. Received feedback like “easier to develop”
-
-\item Improved quality with unit/component tests using Jest and React Testing Library\\
-Wrote test code for issues found via Sentry to prevent recurrence
-
-\item Felt a productivity issue and asked for feedback — was told "lack of alignment before implementation"\\
-Made it a habit to confirm specifications and UI with PMs/designers in advance to prevent development stagnation
-
+\jobentry{\link{https://visits.world/en}{VISITS Technologies Inc.} \textbar\ Frontend Developer}{May 2021 - Feb 2023 \textbar\ Tokyo, Japan (Remote)}
+\begin{itemize}
+  \item Improved code quality with unit and component tests using testing libraries; wrote tests for bugs to prevent recurrence
+  \item Enhanced maintainability by decoupling child components from parent domain logic
+  \item Optimized algorithm efficiency by reducing time complexity
+  \item Improved developer experience by fixing a misconfigured Stylelint setup
+  \item Aligned UI complexity with developer experience through designer collaboration
+  \item Aligned specifications with developer experience through collaboration with product managers
 \end{itemize}
 
-\noindent
-\begin{tabular}{@{}l l}
-\textbf{Tech:} & \parbox[t]{\dimexpr\linewidth-6em\relax}{
-  React.js, React-Router, React-Datepicker, React-DND, React-i18next, React-Hook-Form\\
-  React-Testing-Library, Yup, GraphQL-Codegen, Apollo Client, Styled-Components, Jest, ECharts, ESLint, Prettier, Yarn, Git, Slack, Jira, Figma
-}
-\end{tabular}
+\vspace{1em}
 
-\vspace{0.15em}
-\noindent\rule{\linewidth}{0.4pt}
-\vspace{0.15em}
-
-\jobentry{\link{https://gizumo-inc.jp}{Gizumo Inc.} \textbar\ Frontend Engineer}{Sep 2019 - May 2021 \textbar\ Tokyo, Japan}
-
-\vspace{0.15em}
-
-\noindent Role: Frontend development of {\link{https://moneykit.net/en}{internet banking}}
-
-\begin{itemize}[leftmargin=1em]
-
-  \item Improved maintainability and reusability by abstracting logic using Hooks
-
+\jobentry{\link{https://gizumo-inc.jp}{Gizumo Inc.} \textbar\ Frontend Developer}{Sep 2019 - May 2021 \textbar\ Tokyo, Japan}
+\begin{itemize}
+  \item Reviewed pull requests to maintain code standards
+  \item Improved maintainability and reusability by abstracting logic using React Hooks
 \end{itemize}
 
-\noindent
-\begin{tabular}{@{}l l}
-\textbf{Tech:} & \parbox[t]{\dimexpr\linewidth-6em\relax}{
-  React.js, Redux, React-Redux, MUI, Next.js, Formik, Yup, Axios, Jest, ESLint, Yarn, Git, GitLab, Slack, Adobe XD, GitHub
-}
-\end{tabular}
+\vspace{1em}
 
-\vspace{0.5em}
+\noindent {\normalsize\textbf{\uppercase{Education}}}\par
+\vspace{-1em}
+\noindent\rule{\textwidth}{0.1pt}
 
-\noindent Role: Frontend development of warehouse management system
-
-\begin{itemize}[leftmargin=1em]
-
-  \item Felt productivity issues due to low Git proficiency and studied Git\\
-  Previously caused conflicts by creating branches from outdated default branches, so created a GitAlias combining \texttt{checkout default-branch} → \texttt{pull} → \texttt{checkout -b new-branch} to prevent recurrence
-
-\end{itemize}
-
-\noindent
-\begin{tabular}{@{}l l}
-\textbf{Tech:} & \parbox[t]{\dimexpr\linewidth-6em\relax}{
-  Vue.js, Vue-Router, Vuex, Vuetify, Axios, Joi, Lodash, VeeValidate, Backlog, GitHub, Slack
-}
-\end{tabular}
-
-\vspace{0.25em}
-\noindent\rule{\linewidth}{0.4pt}
-\vspace{0.25em}
-
-\noindent
-\textbf{\large English} \textbar\
-\textbf{Advanced}
-\textbf{\large /Japanese} \textbar\
-\textbf{Native}
+\noindent \textbf{Bachelor of Engineering}, Takushoku University \textbar\ Tokyo, Japan \textbar\ Apr 2015 - Mar 2019
 
 \end{document}
