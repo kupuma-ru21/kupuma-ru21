@@ -79,6 +79,12 @@ React.js, Next.js, Remix, Chakra-UI, Storybook, GraphQL-Codegen, Apollo Client, 
   その結果、API の新規追加およびテストの作成を期日内に完了することができた。
   また、APIの実装に伴い既存テーブルへのカラム追加が必要となり、ER図の更新も併せて実施した。
 
+- Frontend developer全員のPRレビュー
+
+- Sentryで検知されたerrorの修正、修正が難しい場合はチーム巻き込んで相談
+
+- Junior developerをサポート
+
 
 ##### 使用技術
 
